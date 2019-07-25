@@ -2,7 +2,7 @@
 This assumes we already have male.csv
 and female.csv, ordered by timestamp,
 everyone in that csv interests in opposite sex, LGBT is
-handled separately.
+handled seperatly.
 """
 
 
@@ -32,8 +32,8 @@ with open("female.csv") as f:
         female_profile_list.append((female_id,profile))
         female_id += 1
 
-print male_profile_list
-print female_profile_list
+# print male_profile_list
+# print female_profile_list
 
 matched_female_ids = set()
 matched_male_ids = set()
@@ -54,7 +54,7 @@ for male_id, male_profile in male_profile_list:
         female_want_traits = set([female_profile[WANT_TRAIT_1_INDEX], female_profile[WANT_TRAIT_2_INDEX]])
         female_traits = set([female_profile[TRAIT_1_INDEX], female_profile[TRAIT_2_INDEX]])
 
-        if male_want_traits.intersection(female_traits) and female_traits.intersection(male_traits):
+        if male_want_traits.intersection(female_traits) and female_want_traits.intersection(male_traits):
             matched_female_ids.add(female_id)
             matched_male_ids.add(male_id)
             # print "male %s and female %s match success"%( male_id, female_id)
@@ -95,5 +95,4 @@ Result looks like:
 trait matched:
 "2019/07/25 4:39:30 PM AST","b1","b1email","男","女","高颜值","聪明","高颜值","聪明","看书","健身"
 "2019/07/25 4:42:22 PM AST","g2","g2email","女","男","高颜值","善良","善良","聪明","户外","健身"
-
 """"
