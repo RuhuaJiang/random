@@ -89,3 +89,11 @@ for matched in trait_matched_couple:
 for matched in interests_matched_couple:
     print "interests matched:"
     print matched[0], matched[1]
+
+""""
+Result looks like:
+trait matched:
+"2019/07/25 4:39:30 PM AST","b1","b1email","男","女","高颜值","聪明","高颜值","聪明","看书","健身"
+"2019/07/25 4:42:22 PM AST","g2","g2email","女","男","高颜值","善良","善良","聪明","户外","健身"
+
+""""
