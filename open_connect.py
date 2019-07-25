@@ -2,7 +2,7 @@
 This assumes we already have male.csv
 and female.csv, ordered by timestamp,
 everyone in that csv interests in opposite sex, LGBT is
-handled sperated.
+handled separately.
 """
 
 
